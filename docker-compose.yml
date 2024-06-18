@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  database:
+    container_name: postgres-tooth-fixers
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    volumes:
+      - /Users/rutholotu/Desktop/Documents/school-stuff/Year-2/Semester-2/computer-programming/tooth-fixers/data:/nest/data
+    env_file:
+      - tooth-fixers.env
+      
